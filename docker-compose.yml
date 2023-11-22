@@ -1,6 +1,8 @@
 version : "3.3"
 services :
   web :
-     image : arjunmmnn/my-note-app:latest
+     build:
+      context: .
+      dockerfile: Dockerfile
      ports :
          - "8000:8000"
